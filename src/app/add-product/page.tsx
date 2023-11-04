@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/db/prisma";
 import { redirect } from "next/navigation";
+import SubmitButton from "../../components/SubmitButton";
 
 export const metadata = {
   title: "Add Product - Flowmazon",
@@ -53,9 +54,7 @@ export default function AddProductPage() {
           className="input-bordered input mb-3 w-full"
           placeholder="Product Price"
         />
-        <button type="submit" className="btn-primary btn-block btn">
-          Add Product
-        </button>
+        <SubmitButton className="btn-block">Add Product</SubmitButton>
       </form>
     </div>
   );
